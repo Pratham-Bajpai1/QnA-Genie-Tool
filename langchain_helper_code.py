@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env (especially openai api key)
 
 # Create Google Palm LLM model
-api_key = 'AIzaSyA3Of7WYpD6TWhEg_aXcrR-3boWEZKCg1M'
+api_key = 'put your key here'
 llm = GooglePalm(google_api_key=api_key, temperature=0)
 if "GOOGLE_API_KEY" not in os.environ:
     os.environ["GOOGLE_API_KEY"] = api_key
